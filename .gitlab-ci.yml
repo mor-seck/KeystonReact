@@ -1,0 +1,32 @@
+stages:
+  - compile
+  - deploy
+
+Compilation:
+  stage: compile
+  # only:
+  #   - develop
+  tags:
+    - php
+  script:
+    - mkdir -p /tmp/lepori
+    - rsync -a --delete ./ /tmp/lepori
+    - cd /tmp/lepori
+    - yarn install
+    - CI=false yarn build
+    - cp .htaccess build/
+    - cd server
+    - yarn install
+#    - node ./node_modules/.bin/keystone build
+
+Development:
+  stage: deploy
+  when: manual
+#   only:
+#     - develop
+  environment:
+    name: development
+  tags:
+    - php
+  script:
+    - ansible-playbook -i /etc/ansible/environments/dev .cicd/sync.yml

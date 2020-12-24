@@ -1,0 +1,148 @@
+.header{
+   margin:0px;
+  overflow: hidden;
+  padding: 16px 0;
+  @media screen and (max-width: $break-large) {
+    overflow: visible;
+    height: 100px;
+  }
+  .logo{
+    width: 192px;
+    float: left;
+  }
+  .menu-header{
+    float: right;
+    position: relative;
+    @media screen and (max-width: $break-large) {
+      display: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background: #081FE4;
+      padding: 150px 0;
+      z-index: 5;
+    }
+    li{
+      float: left;
+      @media screen and (max-width: $break-large) {
+        width: 100%;
+        display: block;
+      }
+      a{
+        font-size: 13px;
+        font-weight: 700;
+        padding: 0 20px;
+        line-height: 57px;
+        color: #081FE4;
+        &:hover{
+          text-decoration: underline;
+        }
+        @media screen and (max-width: 1120px) {
+          padding: 0 12px;
+        }
+        @media screen and (max-width: $break-large) {
+          color: #ffffff;
+          font-size: 30px;
+          line-height: 50px;
+          text-align: center;
+          display: block;
+        }
+
+      }
+    }
+  }
+}
+
+.close-menu{
+  display: none;
+  position: absolute;
+  top: 44px;
+  right: 34px;
+  width: 38px;
+  height: 16px;
+  background: url("../images/close-icon.svg") no-repeat center center;
+  @media screen and (max-width: $break-large) {
+    display: block;
+  }
+}
+
+.breadcrumbs{
+  background: #081FE4;
+  overflow: hidden;
+  ul{
+    overflow: hidden;
+    margin: 0;
+    @media screen and (max-width: $break-small) {
+      width: 150%;
+    }
+  }
+  li{
+    font-size: 14px;
+    line-height: 29px;
+    color: #ffffff;
+    text-transform: uppercase;
+    float: left;
+    position: relative;
+    a{
+      color: #ffffff;
+      padding-right: 25px;
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        width: 10px;
+        height: 29px;
+        background: url("../images/arrow.svg") no-repeat left center;
+      }
+    }
+    &:nth-child(3){
+      padding-right: 25px;
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        width: 10px;
+        height: 29px;
+        background: url("../images/arrow.svg") no-repeat left center;
+      }
+    }
+  }
+}
+
+
+  .burger {
+    position: relative;
+    display: block;
+    width:31px;
+    height: 18px;
+    display: none;
+    float: right;
+    margin-top: 30px;
+    background: url("../images/menu-icon.svg") no-repeat center center;
+    @media screen and (max-width: $break-large) {
+      display: block;
+    }
+    @media screen and (max-width: $break-large) {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 35px;
+      height: 1px;
+      top: 7px;
+      left: 10px;
+        @media screen and (max-width: $break-large) {
+          width: 21px;
+        }
+    }
+  }

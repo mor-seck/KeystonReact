@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+  <g id="instagram-icon" transform="translate(-1020 -296)">
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1020 296)" fill="none" stroke="#081fe4" stroke-width="1">
+      <circle cx="19.5" cy="19.5" r="19.5" stroke="none"/>
+      <circle cx="19.5" cy="19.5" r="19" fill="none"/>
+    </g>
+    <g id="Icon_feather-instagram" data-name="Icon feather-instagram" transform="translate(1026.357 301.5)">
+      <path id="Path_27" data-name="Path 27" d="M8.411,3H19.232a5.411,5.411,0,0,1,5.411,5.411V19.232a5.411,5.411,0,0,1-5.411,5.411H8.411A5.411,5.411,0,0,1,3,19.232V8.411A5.411,5.411,0,0,1,8.411,3Z" fill="none" stroke="#081fe4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_28" data-name="Path 28" d="M20.675,15.629a4.328,4.328,0,1,1-3.647-3.647,4.328,4.328,0,0,1,3.647,3.647Z" transform="translate(-2.525 -2.489)" fill="none" stroke="#081fe4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_29" data-name="Path 29" d="M26.25,9.75h0" transform="translate(-6.477 -1.88)" fill="none" stroke="#081fe4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
